@@ -1,0 +1,24 @@
+load angry.mat;
+p1=P';
+label1=label';
+load love.mat;
+p2=P';
+label2=label';
+load negative.mat;
+p3=P';
+label3=label';
+load positive.mat;
+p4=P';
+label4=label';
+load sad.mat;
+p5=P';
+label5=label';
+load smile.mat;
+ p6=P';
+ label6=label';
+ data=[p1;p2;p3;p4;p5;p6];
+ label=[label1;label2;label3;label4;label5;label6];
+ data=data';
+ label=label';
+ save('database.mat','data','label');
+ 
